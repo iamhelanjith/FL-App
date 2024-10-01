@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login_app/src/features/authentication/screens/splash_screen/splash_screen.dart';
 import 'package:login_app/src/utils/thems/theme.dart';
 
 void main() {
@@ -14,19 +15,9 @@ class MyApp extends StatelessWidget {
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
       themeMode: ThemeMode.system,
-      home: const MyHome(),
+      home: const SplashScreen(),
     );
   }
 }
 
-class MyHome extends StatelessWidget {
-  const MyHome({Key? key}) :super(key: key);
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text('./appble')),
-      body: const Center(child: Text('Home Page'),),
-    );
-  }
-}
